@@ -1,0 +1,38 @@
+<!DOCTYPE html> 
+<html>
+ <head>
+    <title>Car rental</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+            #submit:hover {
+                color: green;
+                background-color: yellow;
+            }
+        </style>
+    </head>
+ <body>
+    <a href="#info">Car Rental Info</a>
+    <form>
+        <div>
+            Car of your choice
+            <input name="car" list="cars" placeholder="Car">
+            <datalist id="cars">
+                <option value="VW">VW</option>
+                <option value="Ford">Ford</option>
+                <option value="Toyota">Toyota</option>
+                <option value="Audi">Audi</option>
+                <option value="Tesla">Tesla</option>
+            </datalist>
+        </div>
+        <div>
+            Email
+            <input type="text" name="email" pattern=".+@.+\..+">
+            </div>
+            <button id="submit" type="submit">Submit</button>
+    </form>
+    <p id="info">
+        This car rental company values your satisfaction. If you have any question
+        or need further information, call us at 777-888-9999.
+    </p>
+ </body>
+</html>
